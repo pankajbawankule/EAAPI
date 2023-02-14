@@ -22,13 +22,6 @@ public class Props {
         InputStream input = new FileInputStream(System.getProperty("user.dir")+"/src/test/resources/environment.properties");
         Properties properties = new Properties();
         properties.load(input);
-            return properties.getProperty("env");
+        return properties.getProperty("env");
     }
-
-    /*public static void main(String[] args) throws Exception{
-
-        Props props = new Props();
-        System.out.println("Test:"+props.getProperty("baseurl"));
-    }*/
-
-    }
+}
